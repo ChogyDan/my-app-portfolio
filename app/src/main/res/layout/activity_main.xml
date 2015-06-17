@@ -23,16 +23,7 @@
         android:id="@+id/button"
         android:layout_alignParentTop="true"
         android:layout_marginTop="54dp"
-        android:layout_alignLeft="@+id/button6"
-        android:layout_alignStart="@+id/button6"
-        android:layout_alignRight="@+id/button6"
-        android:layout_alignEnd="@+id/button6"
-        style="@style/AppTheme"
-        android:background="#ffe9b229"
-        android:padding="11dp"
-        android:paddingBottom="22dp"
-        android:shadowColor="#ffd0d0d0"
-        android:textColor="#ffffffff"
+        style="@style/buttonAlign"
         android:onClick="mediaStreamerClick" />
 
     <Button
@@ -41,16 +32,7 @@
         android:text="@string/super_duo1"
         android:id="@+id/button2"
         android:layout_below="@+id/button"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"
-        style="@style/AppTheme"
-        android:background="#ffe9b229"
-        android:padding="3dp"
-        android:textColor="#ffffffff"
-        android:shadowColor="#ffd0d0d0"
-        android:layout_marginTop="5dp"
+        style="@style/buttonAlign"
         android:onClick="superDuo1Click" />
 
     <Button
@@ -59,16 +41,7 @@
         android:text="@string/super_duo2"
         android:id="@+id/button3"
         android:layout_below="@+id/button2"
-        android:layout_alignRight="@+id/button2"
-        android:layout_alignEnd="@+id/button2"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_alignStart="@+id/button2"
-        style="@style/AppTheme"
-        android:background="#ffe9b229"
-        android:padding="3dp"
-        android:textColor="#ffffffff"
-        android:shadowColor="#ffd0d0d0"
-        android:layout_marginTop="5dp"
+        style="@style/buttonAlign"
         android:onClick="superDuo2Click" />
 
     <Button
@@ -77,16 +50,7 @@
         android:text="@string/ant_terminator"
         android:id="@+id/button4"
         android:layout_below="@+id/button3"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3"
-        android:layout_alignRight="@+id/button3"
-        android:layout_alignEnd="@+id/button3"
-        style="@style/AppTheme"
-        android:background="#ffe9b229"
-        android:padding="3dp"
-        android:textColor="#ffffffff"
-        android:shadowColor="#ffd0d0d0"
-        android:layout_marginTop="5dp"
+        style="@style/buttonAlign"
         android:onClick="antTerminatorClick" />
 
     <Button
@@ -94,17 +58,8 @@
         android:layout_height="wrap_content"
         android:text="@string/materialize"
         android:id="@+id/button5"
-        style="@style/AppTheme"
-        android:background="#ffe9b229"
-        android:padding="3dp"
-        android:textColor="#ffffffff"
-        android:shadowColor="#ffd0d0d0"
+        style="@style/buttonAlign"
         android:layout_below="@+id/button4"
-        android:layout_alignLeft="@+id/button6"
-        android:layout_alignStart="@+id/button6"
-        android:layout_marginTop="5dp"
-        android:layout_alignRight="@+id/button4"
-        android:layout_alignEnd="@+id/button4"
         android:onClick="materializeClick" />
 
     <Button
@@ -112,11 +67,7 @@
         android:layout_height="wrap_content"
         android:text="@string/capstone"
         android:id="@+id/button6"
-        android:background="#ffe9b229"
-        android:padding="3dp"
-        android:textColor="#ffffffff"
-        android:shadowColor="#ffd0d0d0"
-        android:layout_marginTop="5dp"
+        style="@style/myButton"
         android:layout_below="@+id/button5"
         android:layout_centerHorizontal="true"
         android:onClick="capstoneClick"

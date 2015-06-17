@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
+    private Toast toaster;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,34 +39,37 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    private void makeToast(String message) {
+        if(toaster != null){
+            toaster.cancel();
+        }
+        toaster = Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT);
+        toaster.show();
+
+    }
+
     public void mediaStreamerClick(View v){
-        Toast toast = Toast.makeText(getApplicationContext(), "You clicked the media streamer button", Toast.LENGTH_SHORT );
-        toast.show();
+        makeToast("You clicked the media streamer button");
     }
 
     public void superDuo1Click(View v){
-        Toast toast = Toast.makeText(getApplicationContext(), "You clicked the super duo 1 button", Toast.LENGTH_SHORT );
-        toast.show();
+        makeToast("You clicked the super duo 1 button");
     }
 
     public void superDuo2Click(View v){
-        Toast toast = Toast.makeText(getApplicationContext(), "You clicked the super duo 2 button", Toast.LENGTH_SHORT );
-        toast.show();
+        makeToast("You clicked the super duo 2 button");
     }
 
     public void antTerminatorClick(View v){
-        Toast toast = Toast.makeText(getApplicationContext(), "You clicked the ant terminator button", Toast.LENGTH_SHORT );
-        toast.show();
+        makeToast("You clicked the ant terminator button");
     }
 
     public void materializeClick(View v){
-        Toast toast = Toast.makeText(getApplicationContext(), "You clicked the materialize button", Toast.LENGTH_SHORT );
-        toast.show();
+        makeToast("You clicked the materialize button");
     }
 
     public void capstoneClick(View v){
-        Toast toast = Toast.makeText(getApplicationContext(), "You clicked the capstone button", Toast.LENGTH_SHORT );
-        toast.show();
+        makeToast("You clicked the capstone button");
     }
 
 }
